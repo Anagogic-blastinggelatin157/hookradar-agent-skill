@@ -6,5 +6,16 @@
     "name": "HookRadar",
     "email": "hello@hookradar.net",
     "url": "https://hookradar.net"
-  }
+  },
+  "repository": "https://github.com/HookRadar/hookradar-agent-skill",
+  "homepage": "https://hookradar.net/ai-connectors",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "creative-intelligence",
+    "mcp",
+    "meta-ads",
+    "tiktok-ads",
+    "organic-social"
+  ]
 }
