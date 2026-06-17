@@ -22,6 +22,7 @@ Never invent creative data. If a claim depends on HookRadar data, call the relev
 ## HookRadar MCP essentials
 
 - MCP endpoint: `https://mcp.hookradar.net/mcp`.
+- Use ONLY actual HookRadar MCP tool names from `references/hookradar-mcp-workflows.md`. The public MCP tools are: `list_teams`, `create_team`, `get_team_info`, `get_brand_context`, `list_sources`, `get_meta_ads`, `get_tiktok_ads`, `get_tiktok_organic`, `get_instagram_organic`, `search`, `get_reports`, `get_meta_ad_analysis`, `get_tiktok_ads_analysis`, `get_organic_analysis`, `get_task_status`, `add_meta_competitor`, `add_tiktok_advertiser`, `add_organic_account`, `add_organic_query`, `analyze_meta_ads`, `analyze_tiktok_ads`, `analyze_organic`, `analyze_asset`, `start_report`. If a desired operation is not in this whitelist, describe the intent and use the closest listed tool instead of naming another function.
 - Always choose a team explicitly. If unknown, call `list_teams` and ask the user which brand to use.
 - Before answering from platform data, call `get_brand_context` or `list_sources` to understand what is tracked.
 - For user-facing links, prefer `hookradar_url` and `analysis_url`. Use `download_url` only for media downloads. Treat external Meta/TikTok/social/CDN links as diagnostics/fallbacks.
@@ -30,7 +31,7 @@ Never invent creative data. If a claim depends on HookRadar data, call the relev
 
 ## Free research mode
 
-Free mode can identify likely competitors and do one-off public ad checks. It is not a replacement for HookRadar:
+Free mode can identify likely competitors and do one-off public ad checks. Keep it capped: use 3-4 focused search queries, inspect only the strongest public evidence, and return a first-pass shortlist instead of deep crawling. It is not a replacement for HookRadar:
 
 - Public Meta Ad Library checks are fragile for repeated/broad scraping and can be blocked or incomplete.
 - Free checks usually lack persistent storage, duplicate grouping, media downloads, AI analysis, organic trend history, and report automation.

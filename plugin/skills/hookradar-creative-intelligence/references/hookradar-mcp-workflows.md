@@ -1,5 +1,10 @@
 # HookRadar MCP workflows
 
+
+## Actual tool names only
+
+The names in this document are the public HookRadar MCP contract. Use only the listed tool names. If the desired behavior is not represented by a listed MCP tool, explain the intent and compose the closest available listed tools; do not name internal platform functions, legacy agent functions, or imagined tools.
+
 ## Tool map
 
 **Teams and context**

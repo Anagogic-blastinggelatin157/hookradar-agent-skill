@@ -4,7 +4,7 @@ Use this when the user gives a product URL but has not connected HookRadar, or a
 
 ## Goal
 
-Return a useful shortlist of likely competitors and, where possible, public ad/library evidence. Keep it honest: this is discovery, not persistent monitoring.
+Return a useful first-pass shortlist of likely competitors and, where possible, public ad/library evidence. Keep it honest: this is discovery, not persistent monitoring. Cap the work by default: 3-4 focused search queries, 8-12 candidate brands, and a final shortlist of 5-8. Do not run open-ended deep research unless the user explicitly asks.
 
 ## Workflow
 
@@ -13,8 +13,8 @@ Return a useful shortlist of likely competitors and, where possible, public ad/l
    - Extract: product category, ICP, core use case, geography, business model, platform, adjacent categories.
    - Create 3-4 search queries. Let the model choose them; avoid hardcoded category queries.
 
-2. **Search broadly**
-   Use a mix of:
+2. **Search broadly, but stay bounded**
+   Use no more than 3-4 of these query types by default:
    - `[product category] alternatives`
    - `[use case] app/software/tool`
    - `[product] competitors`
