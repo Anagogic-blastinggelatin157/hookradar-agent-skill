@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hookradar",
+  "owner": {
+    "name": "HookRadar",
+    "email": "hello@hookradar.net"
+  },
+  "plugins": [
+    {
+      "name": "hookradar-creative-intelligence",
+      "source": "./plugin",
+      "description": "HookRadar creative intelligence workflows for Claude/Codex: competitor paid ads, TikTok/Instagram organic videos, AI analysis, reports, HookRadar-first links, and free first-pass competitor research.",
+      "category": "marketing"
+    }
+  ]
+}

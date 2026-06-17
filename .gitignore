@@ -1,0 +1,14 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets / local auth
+.env
+.env.*
+*.local.json
+
+# Runtime caches
+node_modules/
+__pycache__/
+.pytest_cache/

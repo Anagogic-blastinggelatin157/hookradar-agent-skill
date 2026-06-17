@@ -1,0 +1,20 @@
+{
+  "name": "hookradar",
+  "interface": {
+    "displayName": "HookRadar"
+  },
+  "plugins": [
+    {
+      "name": "hookradar-creative-intelligence",
+      "source": {
+        "source": "local",
+        "path": "./plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    }
+  ]
+}
