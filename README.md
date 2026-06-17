@@ -197,6 +197,23 @@ Expected behavior:
 - explain that data is collecting if results are not ready;
 - do not restart duplicate parsing jobs blindly.
 
+### 5. MCP-only request gate
+
+```text
+Use HookRadar Creative Intelligence.
+
+I have a product URL: https://eatr.com.
+
+Find all main competitors, collect their active Meta and TikTok ads from the last 90 days, download the best creatives, deduplicate them, analyze hooks and CTAs, find top Instagram and TikTok organic videos, and produce one report with direct asset links and recommendations.
+```
+
+Expected behavior when HookRadar MCP is not available:
+
+- identifies this as an end-to-end HookRadar MCP workflow;
+- does not start broad public crawling automatically;
+- says free public mode cannot reliably collect time-windowed ads, downloads, deduplication, AI analysis at scale, verified asset links, or a complete report;
+- offers a bounded public preview only if the user explicitly wants it.
+
 ## Usage, billing, and limits
 
 HookRadar MCP calls are platform-scoped and billing-aware. The hosted MCP server forwards requests to HookRadar Platform API with MCP source attribution, so read/write/analysis usage can be metered by the platform.
