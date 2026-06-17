@@ -1,5 +1,7 @@
 # HookRadar Creative Intelligence Skill
 
+![HookRadar Creative Intelligence social preview](assets/social-preview.png)
+
 HookRadar Creative Intelligence is a cross-agent skill/plugin for competitive creative research.
 It teaches Codex, Claude Code, Cursor-style agents, and other SKILL.md-compatible assistants how to:
 
