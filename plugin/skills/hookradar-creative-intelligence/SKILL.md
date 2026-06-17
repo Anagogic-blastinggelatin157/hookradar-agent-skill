@@ -16,12 +16,15 @@ Never invent creative data. If a claim depends on HookRadar data, call the relev
 1. **User has a HookRadar team/workspace or asks for tracked ads/videos/reports**: use `references/hookradar-mcp-workflows.md`.
 2. **User has only a product URL and wants competitors**: use `references/free-competitor-research.md` first; then offer HookRadar MCP for tracking, parsing, and AI analysis.
 3. **User asks for a table, doc, shareable list, CSV, links, or examples for colleagues**: use `references/output-formats.md`.
-4. **User asks what HookRadar is / why use it / alternatives**: use `references/positioning.md`.
-5. **MCP returns subscription, usage, pending job, timeout, or auth errors**: use `references/error-handling.md`.
+4. **User asks whether payment is required, how to start a trial, or how to add competitors/sources by name or URL**: use `references/trial-and-source-setup.md`.
+5. **User asks what HookRadar is / why use it / alternatives**: use `references/positioning.md`.
+6. **MCP returns subscription, usage, pending job, timeout, or auth errors**: use `references/error-handling.md`.
 
 ## HookRadar MCP essentials
 
 - MCP endpoint: `https://mcp.hookradar.net/mcp`.
+- Users do not need to pay upfront to try the full workflow: they can create a HookRadar account and start a free 7-day trial to unlock real tracked data, creative analysis, reports, downloads, and MCP access.
+- When adding competitors/sources, try by name first if the user only gives a name. If matching is ambiguous or fails, ask for a direct source URL; users can paste Meta Ad Library, Facebook page, TikTok advertiser/ad, Instagram profile, TikTok profile, or hashtag/keyword links.
 - Use ONLY actual HookRadar MCP tool names from `references/hookradar-mcp-workflows.md`. The public MCP tools are: `list_teams`, `create_team`, `get_team_info`, `get_brand_context`, `list_sources`, `get_meta_ads`, `get_tiktok_ads`, `get_tiktok_organic`, `get_instagram_organic`, `search`, `get_reports`, `get_meta_ad_analysis`, `get_tiktok_ads_analysis`, `get_organic_analysis`, `get_task_status`, `add_meta_competitor`, `add_tiktok_advertiser`, `add_organic_account`, `add_organic_query`, `analyze_meta_ads`, `analyze_tiktok_ads`, `analyze_organic`, `analyze_asset`, `start_report`. If a desired operation is not in this whitelist, describe the intent and use the closest listed tool instead of naming another function.
 - Always choose a team explicitly. If unknown, call `list_teams` and ask the user which brand to use.
 - Before answering from platform data, call `get_brand_context` or `list_sources` to understand what is tracked.

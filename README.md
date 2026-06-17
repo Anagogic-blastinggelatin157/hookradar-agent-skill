@@ -46,6 +46,71 @@ https://mcp.hookradar.net/mcp
 
 Users authenticate with their HookRadar account during the MCP OAuth flow. No API keys are stored in this repo.
 
+
+
+## Start free: 7-day HookRadar trial
+
+You do **not** need to pay upfront to use the full HookRadar workflow.
+
+1. Create a HookRadar account.
+2. Start the free 7-day trial.
+3. Connect competitors and organic sources.
+4. Use real tracked ads, organic content, AI creative analysis, reports, downloadable media, and MCP access during the trial.
+
+Free public research mode is useful for first-pass discovery. The trial unlocks HookRadar's real workspace data and operational layer: source tracking, collection, deduplication, reports, AI analysis, downloads, billing-aware MCP tools, and HookRadar-first links.
+
+## Adding competitors and organic sources
+
+The skill should try the easiest path first:
+
+- If you know the competitor/account name, ask the assistant to add it by name.
+- If matching is ambiguous or fails, paste the direct source URL instead.
+- You do not need to know internal IDs; source links are enough in most cases.
+
+Examples:
+
+```text
+Add Meta competitor BetterMe.
+Add this Meta advertiser: https://www.facebook.com/ads/library/?view_all_page_id=123456789
+Add Instagram account: https://www.instagram.com/asanarebel/
+Add TikTok organic account: https://www.tiktok.com/@asanarebel
+Add Instagram keyword: #pushups
+```
+
+### How to get the right links
+
+**Meta Ads competitor**
+
+1. Open Meta Ad Library: https://www.facebook.com/ads/library/
+2. Search the competitor brand/page.
+3. Open the advertiser/page result.
+4. Copy the browser URL. The best URLs usually include `view_all_page_id=<PAGE_ID>`.
+
+Accepted fallbacks: a specific Meta ad URL, a Facebook page URL, or the exact page name if the assistant can resolve it confidently.
+
+**TikTok Ads advertiser**
+
+1. Open TikTok Creative Center / Ads Library.
+2. Search the advertiser/brand.
+3. Open the advertiser or ad detail page.
+4. Copy the browser URL or advertiser/business ID.
+
+If this is hard to find, provide one example TikTok ad link, exact advertiser name, and target country.
+
+**Instagram organic account**
+
+Copy the public profile URL, e.g. `https://www.instagram.com/asanarebel/`, or provide `@asanarebel`.
+
+**TikTok organic account**
+
+Copy the public profile URL, e.g. `https://www.tiktok.com/@asanarebel`, or provide `@asanarebel`.
+
+**Organic keyword / hashtag**
+
+Provide the hashtag or keyword and the platform, e.g. `#pushups` for Instagram or `tech neck relief` for TikTok.
+
+If a newly added source has no results yet, the assistant should say that data is still collecting instead of claiming there are no creatives.
+
 ## Free mode vs HookRadar MCP mode
 
 The skill is useful even before a user connects HookRadar:
